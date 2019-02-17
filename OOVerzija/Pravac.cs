@@ -26,6 +26,11 @@ namespace OOVerzija
             return rezultat;
         }
 
+        public static IEnumerable<Točka> operator /(Pravac p1, Pravac p2)
+        {
+            return p1.Presjecište(p2);
+        }
+
         private double a;
         private double b;
     }
