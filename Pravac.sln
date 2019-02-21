@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOVerzija", "OOVerzija\OOVe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NizPravaca", "NizPravaca\NizPravaca.csproj", "{A47377CA-61FF-476D-8355-63E9A11A127B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOVerzija2", "OOVerzija2\OOVerzija2.csproj", "{AF075B1A-8E8A-4C88-85CF-6B2B7048D917}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A47377CA-61FF-476D-8355-63E9A11A127B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A47377CA-61FF-476D-8355-63E9A11A127B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A47377CA-61FF-476D-8355-63E9A11A127B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF075B1A-8E8A-4C88-85CF-6B2B7048D917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF075B1A-8E8A-4C88-85CF-6B2B7048D917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF075B1A-8E8A-4C88-85CF-6B2B7048D917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF075B1A-8E8A-4C88-85CF-6B2B7048D917}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
