@@ -21,6 +21,8 @@ namespace OOVerzija
                 Točka s = sjecišta[0];
                 Console.WriteLine($"Sjecište: ({s.x}, {s.y})");
             }
+
+            Console.ReadKey(true);
         }
     }
 }

@@ -8,18 +8,18 @@ namespace OOVerzija
 {
     class Pravac
     {
-        public Pravac(double a, double b)
+        public Pravac(double k, double l)
         {
-            this.a = a;
-            this.b = b;
+            this.k = k;
+            this.l = l;
         }
 
         public Točka[] Sjecišta(Pravac p)
         {
-            if (a == p.a)
+            if (k == p.k)
                 return new Točka[] { };
-            double x = (p.b - b) / (a - p.a);
-            double y = a * x + b;
+            double x = (p.l - l) / (k - p.k);
+            double y = k * x + l;
             return new Točka[] { new Točka(x, y) };
         }
 
@@ -28,7 +28,7 @@ namespace OOVerzija
             return p1.Sjecišta(p2);
         }
 
-        private double a;
-        private double b;
+        private double k;
+        private double l;
     }
 }
