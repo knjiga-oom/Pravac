@@ -23,7 +23,7 @@ namespace OOVerzija
             return new Točka[] { new Točka(x, y) };
         }
 
-        public static IEnumerable<Točka> operator /(Pravac p1, Pravac p2)
+        public static Točka[] operator /(Pravac p1, Pravac p2)
         {
             return p1.Sjecišta(p2);
         }
