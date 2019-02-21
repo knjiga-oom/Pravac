@@ -17,29 +17,26 @@ namespace PrvaVerzija
             }
             try
             {
-                double a1 = double.Parse(args[0]);
-                double b1 = double.Parse(args[1]);
-                double a2 = double.Parse(args[2]);
-                double b2 = double.Parse(args[3]);
+                double k1 = double.Parse(args[0]);
+                double l1 = double.Parse(args[1]);
+                double k2 = double.Parse(args[2]);
+                double l2 = double.Parse(args[3]);
 
-                if (a1 == a2)
-                {
-                    if (b1 == b2)
-                        Console.WriteLine("Pravci se podudaraju");
-                    else
-                        Console.WriteLine("Pravci su paralelni");
-                }
+                if (k1 == k2)
+                    Console.WriteLine("Pravci su paralelni");
                 else
                 {
-                    double x = (b2 - b1) / (a1 - a2);
-                    double y = a1 * x + b1;
-                    Console.WriteLine($"Presjecište: ({x}, {y})");
+                    double x = (l2 - l1) / (k1 - k2);
+                    double y = k1 * x + l1;
+                    Console.WriteLine($"Sjecište: ({x}, {y})");
                 }
             }
             catch (FormatException)
             {
                 Console.WriteLine("Nespravan upis");
             }
+
+            Console.ReadKey(true);
         }
     }
 }
