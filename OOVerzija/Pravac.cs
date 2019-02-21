@@ -14,21 +14,18 @@ namespace OOVerzija
             this.b = b;
         }
 
-        public IEnumerable<Točka> Presjecište(Pravac p)
+        public Točka[] Sjecišta(Pravac p)
         {
-            List<Točka> rezultat = new List<Točka>();
-            if (a != p.a)
-            {
-                double x = (p.b - b) / (a - p.a);
-                double y = a * x + b;
-                rezultat.Add(new Točka(x, y));
-            }
-            return rezultat;
+            if (a == p.a)
+                return new Točka[] { };
+            double x = (p.b - b) / (a - p.a);
+            double y = a * x + b;
+            return new Točka[] { new Točka(x, y) };
         }
 
         public static IEnumerable<Točka> operator /(Pravac p1, Pravac p2)
         {
-            return p1.Presjecište(p2);
+            return p1.Sjecišta(p2);
         }
 
         private double a;
