@@ -12,7 +12,7 @@ namespace OOVerzija2
         {
             this.x = x;
             this.y = y;
-        }
+        } 
 
         public readonly double x;
         public readonly double y;

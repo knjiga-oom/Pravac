@@ -15,7 +15,7 @@ namespace OOVerzija2
             c = l;
         }
 
-        public Pravac(double a, double b, double c)
+        public Pravac(double a, double b, double c) 
         {
             this.a = a;
             this.b = b;

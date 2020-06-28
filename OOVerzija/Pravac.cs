@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOVerzija
 {
-    class Pravac
+    public class Pravac
     {
         public Pravac(double k, double l)
         {
@@ -27,6 +27,14 @@ namespace OOVerzija
         {
             return p1.Sjecišta(p2);
         }
+
+        public void Translatiraj(double deltaX, double deltaY)
+        {
+            l += deltaY - k * deltaX;
+        }
+
+        public double K {  get { return k; } }
+        public double L { get { return l; } }
 
         private double k;
         private double l;

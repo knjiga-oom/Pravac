@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOVerzija
 {
-    class Točka
+    public class Točka
     {
         public Točka(double x, double y)
         {
